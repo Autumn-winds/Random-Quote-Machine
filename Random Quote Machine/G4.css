@@ -1,0 +1,120 @@
+.all .photos div{
+    background-attachment: fixed;
+    background-size: 100% ;
+    background-repeat: no-repeat ;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-position: 50% 50%;
+    top:0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    animation: imageAnimation 35s linear infinite 0s;
+
+
+
+}
+.all .photos .photo1{
+
+
+    background-image: url(https://ws1.sinaimg.cn/large/0072Vf1pgy1foxkc83biwj31hc0u0tsd.jpg);
+}
+.all .photos .photo2{
+    animation-delay: 7s;
+    background-image: url(https://ws4.sinaimg.cn/large/0072Vf1pgy1foxk3y2k80j31kw0w0ay9.jpg);
+}
+.all .photos .photo3{
+    background-image: url(https://ws4.sinaimg.cn/large/a15b4afely1fnt9j9eed7j21hc0u04c4.jpg);
+    animation-delay: 14s;
+
+
+}
+.all .photos .photo4{
+    animation-delay: 21s;
+
+    background-image: url(https://ws3.sinaimg.cn/large/0072Vf1pgy1foxkcofxunj31hc0u0tux.jpg);
+
+}
+.all .photos .photo5{
+    animation-delay: 28s;
+
+    background-image: url(https://ws1.sinaimg.cn/large/a15b4afegy1fmvjixo5vgj21hc0u0ngr.jpg);
+
+}
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+
+8% {
+    opacity: 1;
+    transform: scale(1.01);
+
+    animation-timing-function: ease-out;
+}
+
+17% {
+    opacity: 1;
+    transform: scale(1.05) rotate(0deg);
+}
+25% {
+    opacity: 0;
+    transform: scale(1.1) rotate(0deg);
+}
+100% {
+    opacity: 0;
+    transform: rotate(0deg);
+}
+}
+
+
+.show{
+    width: 60%;
+    padding:50px 50px 20px 50px;
+    margin:12% auto;
+    border-radius: 20px;
+    font-size: 25px;
+    text-indent:2em;
+    background-color: white;
+    opacity: 0.75;
+    z-index: 2;
+}
+.all{
+    overflow: hidden;
+}
+.word p{
+    margin:0px;
+}
+.from{
+    text-align: right;
+    padding: 50px 0 0 0;
+    margin: 0 20px 0 0;
+}
+.shares ul li{
+    font-size: 12px;
+    text-indent:15px;
+    list-style: none;
+    float:left;
+    overflow: hidden;
+    opacity: 0.6;
+}
+.next{
+    text-align: right;
+}
+.button{
+    font-size:18px;
+    padding:5px 10px;
+    margin: 5px 20px 20px 0;
+    font-size: 25px;
+    color: white;
+    background: rgb(99,174,96);
+    border: 0;
+    border-radius:10px;
+    font-family: 'Raleway', sans-serif;
+    outline:none;
+    cursor:pointer;
+}
